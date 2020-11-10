@@ -2,12 +2,14 @@ import React from "react"
 class Place extends React.Component{
     render(props) {
         let style = {
-            width: "24%",
+            width: "31%",
             height: "30%",
             display: "block",
             border: "1px solid black",
             textAlign: "center",
-            padding:"1%"
+            padding:"1%",
+            marginLeft:"33%",
+            marginTop:"0%"
         }
         let prop = this.props.props;
         console.log(prop)

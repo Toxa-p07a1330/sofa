@@ -18,9 +18,13 @@ class Places extends  React.Component{
         ret[sParam.split("=")[0]]=+sParam.split("=")[1];
         return ret;
     }
+    style = {
+        marginTop: "3vh"
+    }
     render(){
         return (
-            <div>
+            <div style={this.style}>
+
                 {(()=>{
                     if (!this.state.isLoaded)
                     {

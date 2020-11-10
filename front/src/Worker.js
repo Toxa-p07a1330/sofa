@@ -18,7 +18,7 @@ class Worker extends React.Component{
         this.setServiceID();
         console.log(this.serviceID)
         return <div style={style}>
-            <img src={prop.photo} style={{width: "25%", height: "30%", float: "left"}}/>
+            <img src={prop.photo} style={{width: "7vw", height: "10vh", float: "left", margin:"7px"}}/>
             <div>{prop.wname}</div>
             <div>Номер телефона: {prop.phone}</div>
             <div>{prop.price?"Цена: "+prop.price:""}</div>

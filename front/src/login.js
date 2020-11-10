@@ -154,7 +154,7 @@ class Login extends React.Component{
                         <div>
                             <div>
                                 <button onClick={()=>{registr(this.state.worker[0].id, this.state.service[0].sid,
-                                    this.state.place[0].id, this.state.service[0].duration)}}>
+                                    this.state.place[0].id, this.state.service[0].duration); alert ("Запись оформлена!")}}>
                                     <a>
                                         Подтвердить
                                     </a>

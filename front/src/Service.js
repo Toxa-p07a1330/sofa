@@ -4,17 +4,26 @@ class Service extends React.Component{
         display: "inline-block",
         border: "1px solid black",
         padding: "1%",
-        width: "17%",
-        height: "10%"
+        width: "80%",
+        marginLeft: "10%"
+
+    }
+    photoStyle = {
+        width: "10%",
+        height:"10%",
+        float: "left",
+        paddingRight: "1%"
     }
     render(props) {
         let prop = this.props.prop;
         console.log(prop)
         return <div style={this.style}>
+                <img src={prop.photo} style={this.photoStyle}/>
             Тип услуги: {prop.type} <br/>
             Название: {prop.name}<br/>
             Описание: {prop.description}<br/>
             Продолжительность: {prop.duration/60} мин<br/>
+            {console.log(prop)}
             <button>
                 <a href={"http://localhost:3000" +
                 "/workers?select%20*%20from%20%20mapWorkersWithServices%20" +

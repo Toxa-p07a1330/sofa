@@ -44,7 +44,6 @@ class Workers extends  React.Component{
                         console.log(this.state.data)
                         return <div style={{height: "100%", width: "100%"}}>
                             {
-
                                 this.state.data.map((value)=>{
                                     console.log("sid="+JSON.stringify(value.sid))
 
